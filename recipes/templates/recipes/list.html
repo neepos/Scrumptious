@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static "css/recipes.css" %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=x, initial-scale=1.0">
+    <title>
+        <b>Scrumptious Recipes</b>
+    </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-button" href="{% url 'recipe_list' %}">Main page</a>
+            <a class="nav-button" href="{% url 'create_recipe' %}">Create a recipe</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Scrumptious Recipes</h1>
+        <h2>All the food that's fit to eat</h2>
+        <div class="recipe-grid">
+            {% for recipe in recipe_list %}
+            <div>
+                <h3><a class="recipe-button" href="{% url 'show_recipe' recipe.id %}">{{ recipe.title }}</a></h3>
+                <p>{{ recipe.created_on|date:"F n Y" }}</p>
+                <img src="{{ recipe.picture }}"
+                    alt="GOOD FOOD"
+                    width="220" height="200">
+                <figcaption>4.3 stars</figcaption>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <footer>
+    <div class="footer-div">Made with love by Scrumptious Recipes</div>
+    </footer>
+</body>
+</html>

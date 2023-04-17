@@ -1,0 +1,144 @@
+
+
+html {box-sizing: border-box;}
+  * {box-sizing: inherit;}
+  * {font-family: 'Roboto', sans-serif;}
+
+
+header {
+    padding: 20px;
+    padding-bottom: 20px;
+    border: 1px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: black;
+    border-right: transparent;
+    border-left: transparent;
+    background-color:rgb(69, 90, 155);
+}
+
+
+body {background-color: aliceblue;}
+
+
+h1 {
+    margin-top: 40px;
+    color: rgb(69, 90, 155);
+}
+
+
+h2 {
+    color: rgb(69, 90, 155);
+    text
+}
+
+
+footer {padding-top: 50px;}
+
+
+th {text-align: left;}
+
+
+a:hover {color: rgb(33, 34, 46);}
+
+
+tr:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+  }
+
+
+  .recipe-button {
+    color: white;
+    background-color: rgb(69, 90, 155);
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(69, 90, 155);
+    padding: 5px;
+    text-decoration: none;
+    transition: color 0.5s;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);;
+}
+
+
+.nav-button {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 3em;
+}
+
+
+.footer-div {
+    color: white;
+    background-color: rgb(69, 90, 155);
+    padding: 30px 0px 30px 10px
+}
+
+
+/* Below is a whole lot of work that I did before I realized
+the reason it wasn't working was because I hadn't nested the
+<div> tags correctly.
+
+
+/* #recipe-one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 10px;
+}
+
+
+#recipe-two {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding: 10px;
+}
+
+
+#recipe-three {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 10px;
+}
+
+
+#recipe-four {
+    grid-column: 4;
+    grid-row: 1;
+    padding: 10px;
+}
+
+
+#recipe-five {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 10px;
+}
+
+
+#recipe-six {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 10px;
+}
+
+
+#recipe-seven {
+    grid-column: 3;
+    grid-row: 2;
+    padding: 10px;
+}
+
+
+#recipe-eight {
+    grid-column: 4;
+    grid-row: 2;
+    padding: 10px;
+} */
